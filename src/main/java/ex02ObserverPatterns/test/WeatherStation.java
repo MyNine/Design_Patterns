@@ -1,13 +1,14 @@
 package ex02ObserverPatterns.test;
 
 import ex02ObserverPatterns.CurrentConditionDisplay;
-import ex02ObserverPatterns.WeatherData;
+import ex02ObserverPatterns.improve.CurrentConditionsDisplay;
+import ex02ObserverPatterns.improve.WeatherData;
 
 public class WeatherStation {
     public static void main(String[] args){
         WeatherData weatherData = new WeatherData();
 
-        CurrentConditionDisplay currentDisplay = new CurrentConditionDisplay(weatherData);
+        CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
         // StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
         // ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
 
